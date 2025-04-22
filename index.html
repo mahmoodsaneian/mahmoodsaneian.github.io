@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mahmood's Personal Page</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-U1W4nU1Et1jZC5Zjv5hOqZHg0hHwhYpZyktcgQFt7YViJ7Z7X2+I2nUJmRkv9H97lPzMEJPf+Phd6T92+KqP1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p1JlTGfa23H4DTNGd+x3e3DND0+OZ7T6ZoJxhM5L0xAaS8b0VqYZ1c6YZgT5UjcEBhnV+mxElocXf7FQfKJr3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
       margin: 0;
@@ -18,7 +18,7 @@
     nav {
       display: flex;
       justify-content: center;
-      gap: 3rem;
+      gap: 5rem;
       background-color: #2f3921;
       padding: 1rem;
       border-bottom: 2px solid #4a5e35;
@@ -28,7 +28,7 @@
       text-decoration: none;
       color: #cfe29c;
       background: #434f2b;
-      padding: 0.6rem 1.4rem;
+      padding: 0.6rem 1.6rem;
       border-radius: 20px;
       font-weight: 600;
       transition: background 0.3s;
@@ -40,35 +40,34 @@
 
     .container {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: flex-start;
+      flex-direction: column;
+      align-items: center;
       padding: 4rem 2rem;
       gap: 2rem;
       max-width: 1200px;
       margin: 0 auto;
     }
 
-    .welcome-box, .intro-box, .extra-section {
+    .welcome-box {
       background-color: rgba(255, 255, 255, 0.1);
       padding: 3rem;
       border-radius: 20px;
-      width: 360px;
+      width: 700px;
       box-sizing: border-box;
+      text-align: center;
     }
 
     .welcome-text {
       font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      text-align: center;
+      font-size: 2.5rem;
       margin-bottom: 2rem;
     }
 
     .icon-row {
       display: flex;
       justify-content: center;
-      gap: 1.5rem;
-      font-size: 1.8rem;
+      gap: 2rem;
+      font-size: 2rem;
     }
 
     .icon-row a {
@@ -83,21 +82,31 @@
 
     .profile-section {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      width: 100%;
     }
 
     .profile-img {
-      width: 220px;
-      height: 220px;
+      width: 280px;
+      height: 280px;
       object-fit: cover;
       border-radius: 50%;
       box-shadow: 0 0 15px rgba(0,0,0,0.5);
     }
 
+    .intro-box, .extra-section {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 20px;
+      width: 360px;
+      box-sizing: border-box;
+    }
+
     .intro-box {
-      text-align: center;
       line-height: 1.6;
     }
 
@@ -122,14 +131,15 @@
     <div class="welcome-box">
       <div class="welcome-text">Welcome To Mahmood Personal Page</div>
       <div class="icon-row">
-        <a href="mailto:mahmoodsaneian1@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/mahmoodsaneian" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/mahmoodsaneian1" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:mahmoodsaneian1@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/mahmoodsaneian" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/mahmoodsaneian1" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       </div>
     </div>
 
     <div class="profile-section">
       <img src="profile.jpg" alt="Mahmood" class="profile-img" />
+
       <div class="intro-box">
         <p>This is a page related to <strong>Mahmood Saneiyan</strong>, a passionate developer and tech enthusiast. You can find his resume and projects by selecting the related tab from the navigation bar.</p>
       </div>
