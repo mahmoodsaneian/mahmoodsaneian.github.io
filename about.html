@@ -1,157 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mahmood Saneiyan | Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <title>About - Mahmood</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
+      margin: 0;
       font-family: 'Inter', sans-serif;
-      background: radial-gradient(circle, #2f3e2e, #1d1f1b);
+      background: radial-gradient(circle at center, #3d4b2b 0%, #1e2617 100%);
       color: #f0f0f0;
-      min-height: 100vh;
-    }
-
-    header {
       display: flex;
       justify-content: center;
-      padding: 1rem;
-      background-color: #3c4b36;
-      border-bottom: 1px solid #606c5b;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
     }
 
-    nav {
-      display: flex;
-      gap: 2rem;
+    .about-container {
+      background-color: rgba(255, 255, 255, 0.07);
+      padding: 3rem 2rem;
+      border-radius: 30px;
+      max-width: 700px;
+      width: 100%;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
     }
 
-    nav a {
+    h1 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      font-size: 2.5rem;
+      color: #e0f98c;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #e0f98c;
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin: 0.5rem 0 1rem;
+      line-height: 1.6;
+      color: #d9d9d9;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 2rem;
+      background-color: #434f2b;
+      color: #e0f98c;
+      padding: 0.6rem 2rem;
+      border-radius: 20px;
       text-decoration: none;
       font-weight: 600;
-      color: #d9e2d4;
-      background-color: #4a5c3e;
-      padding: 0.5rem 1.2rem;
-      border-radius: 30px;
-      transition: all 0.3s ease;
-    }
-
-    nav a:hover {
-      background-color: #647a57;
-      color: white;
-    }
-
-    .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 3rem;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-
-    .intro-box {
-      flex: 1;
-      background-color: #3c4b36;
-      padding: 2rem;
-      border-radius: 20px;
+      transition: background 0.3s;
       text-align: center;
     }
 
-    .intro-box h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-      line-height: 1.4;
-      color: #dce4d6;
-    }
-
-    .social-icons {
-      margin-top: 2rem;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-    }
-
-    .social-icons a img {
-      width: 28px;
-      filter: invert(80%);
-      transition: transform 0.2s;
-    }
-
-    .social-icons a img:hover {
-      transform: scale(1.2);
-    }
-
-    .photo-section {
-      flex: 1;
-      text-align: center;
-    }
-
-    .photo-section img {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 50%;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    }
-
-    .photo-section p {
-      margin-top: 2rem;
-      background-color: #3c4b36;
-      padding: 1.5rem;
-      border-radius: 20px;
-      font-size: 1rem;
-      max-width: 400px;
-      margin-left: auto;
-      margin-right: auto;
-      color: #d2d9c9;
-    }
-
-    .photo-section strong {
-      font-weight: 600;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        align-items: center;
-      }
+    .back-button:hover {
+      background-color: #5c6e3a;
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <nav>
-      <a href="index.html">HOME</a>
-      <a href="projects.html">PROJECTS</a>
-      <a href="about.html">ABOUT</a>
-    </nav>
-  </header>
+  <div class="about-container">
+    <h1>ABOUT</h1>
 
-  <main class="container">
-    <div class="intro-box">
-      <h1>Welcome To<br />Mahmood Personal Page</h1>
-      <div class="social-icons">
-        <a href="mailto:your@email.com" target="_blank"><img src="https://img.icons8.com/material-rounded/24/000000/gmail.png" alt="Gmail" /></a>
-        <a href="https://github.com/mahmoodsaneian" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="GitHub" /></a>
-        <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><img src="https://img.icons8.com/ios-filled/30/000000/linkedin.png" alt="LinkedIn" /></a>
-      </div>
-    </div>
+    <h2>Interests</h2>
+    <p>I like coding and gaining valuable experiences in each field of computer. In my personal opinion, everything is worthy to try. So if you have any interesting idea just tell me.</p>
 
-    <div class="photo-section">
-      <img src="your-profile-photo.jpg" alt="Mahmood Saneiyan" />
-      <p>This is a page related to <strong>Mahmood Saneiyan</strong> and you can find his resume and projects by selecting the related tab from the navigation bar.</p>
-    </div>
-  </main>
+    <h2>Education</h2>
+    <p>I’m currently studying computer engineering in a bachelor’s degree at <strong><em>Amirkabir University of Technology</em></strong> since 2020.</p>
+
+    <h2>Work Experience</h2>
+    <p>I’m currently working at <strong><em>Tosan Company</em></strong> as a backend developer since Jul 2023.<br>
+      Also, I had a valuable experience as a fullstack developer at <strong><em>Golrang System Company</em></strong> from Feb 2022 to Jul 2023.
+    </p>
+
+    <a class="back-button" href="index.html">BACK</a>
+  </div>
 </body>
-
 </html>
