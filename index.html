@@ -4,154 +4,144 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mahmood Saneiyan | Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <title>Mahmood's Personal Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
+      margin: 0;
       font-family: 'Inter', sans-serif;
-      background: radial-gradient(circle, #2f3e2e, #1d1f1b);
+      background: radial-gradient(circle at center, #3d4b2b 0%, #1e2617 100%);
       color: #f0f0f0;
-      min-height: 100vh;
-    }
-
-    header {
-      display: flex;
-      justify-content: center;
-      padding: 1rem;
-      background-color: #3c4b36;
-      border-bottom: 1px solid #606c5b;
     }
 
     nav {
       display: flex;
-      gap: 2rem;
+      justify-content: center;
+      gap: 3rem;
+      background-color: #2f3921;
+      padding: 1rem;
+      border-bottom: 2px solid #4a5e35;
     }
 
     nav a {
       text-decoration: none;
+      color: #cfe29c;
+      background: #434f2b;
+      padding: 0.6rem 1.4rem;
+      border-radius: 20px;
       font-weight: 600;
-      color: #d9e2d4;
-      background-color: #4a5c3e;
-      padding: 0.5rem 1.2rem;
-      border-radius: 30px;
-      transition: all 0.3s ease;
+      transition: background 0.3s;
     }
 
     nav a:hover {
-      background-color: #647a57;
-      color: white;
+      background: #5c6e3a;
     }
 
     .container {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 3rem;
-      gap: 2rem;
       flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: 4rem 2rem;
+      gap: 2rem;
     }
 
-    .intro-box {
-      flex: 1;
-      background-color: #3c4b36;
+    .welcome-box, .intro-box {
+      background-color: rgba(255, 255, 255, 0.1);
       padding: 2rem;
       border-radius: 20px;
-      text-align: center;
+      max-width: 350px;
     }
 
-    .intro-box h1 {
+    .welcome-text {
       font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
+      font-size: 2rem;
+      text-align: center;
       margin-bottom: 2rem;
-      line-height: 1.4;
-      color: #dce4d6;
     }
 
-    .social-icons {
-      margin-top: 2rem;
+    .icon-row {
       display: flex;
       justify-content: center;
       gap: 1.5rem;
+      font-size: 1.5rem;
     }
 
-    .social-icons a img {
-      width: 28px;
-      filter: invert(80%);
-      transition: transform 0.2s;
+    .icon-row a {
+      color: #f0f0f0;
+      transition: transform 0.3s;
     }
 
-    .social-icons a img:hover {
+    .icon-row a:hover {
       transform: scale(1.2);
+      color: #cfe29c;
     }
 
-    .photo-section {
-      flex: 1;
-      text-align: center;
+    .profile-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .photo-section img {
-      width: 250px;
-      height: 250px;
+    .profile-img {
+      width: 200px;
+      height: 200px;
       object-fit: cover;
       border-radius: 50%;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      margin-bottom: 1.5rem;
     }
 
-    .photo-section p {
-      margin-top: 2rem;
-      background-color: #3c4b36;
+    .intro-box {
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .extra-section {
+      max-width: 600px;
+      background-color: rgba(255, 255, 255, 0.08);
       padding: 1.5rem;
       border-radius: 20px;
-      font-size: 1rem;
-      max-width: 400px;
-      margin-left: auto;
-      margin-right: auto;
-      color: #d2d9c9;
-    }
-
-    .photo-section strong {
-      font-weight: 600;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        align-items: center;
-      }
+      margin-top: 2rem;
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="index.html">HOME</a>
-      <a href="projects.html">PROJECTS</a>
-      <a href="about.html">ABOUT</a>
-    </nav>
-  </header>
+  <nav>
+    <a href="#">HOME</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#about">ABOUT</a>
+  </nav>
 
-  <main class="container">
-    <div class="intro-box">
-      <h1>Welcome To<br />Mahmood Personal Page</h1>
-      <div class="social-icons">
-        <a href="mailto:mahmoodsaneian1@gmail.com" target="_blank"><img src="https://img.icons8.com/material-rounded/24/000000/gmail.png" alt="Gmail" /></a>
-        <a href="https://github.com/mahmoodsaneian1" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="GitHub" /></a>
-        <a href="https://www.linkedin.com/in/mahmoodsaneian1" target="_blank"><img src="https://img.icons8.com/ios-filled/30/000000/linkedin.png" alt="LinkedIn" /></a>
+  <div class="container">
+    <div class="welcome-box">
+      <div class="welcome-text">Welcome To Mahmood Personal Page</div>
+      <div class="icon-row">
+        <a href="mailto:mahmoodsaneian1@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/mahmoodsaneian" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/mahmoodsaneian1" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
 
-    <div class="photo-section">
-      <img src="profile.jpg" alt="Mahmood Saneiyan" />
-      <p>This is a page related to <strong>Mahmood Saneiyan</strong> and you can find his resume and projects by selecting the related tab from the navigation bar.</p>
+    <div class="profile-section">
+      <img src="your-profile-photo.jpg" alt="Mahmood" class="profile-img" />
+      <div class="intro-box">
+        <p>This is a page related to <strong>Mahmood Saneiyan</strong>, a passionate developer and tech enthusiast. You can find his resume and projects by selecting the related tab from the navigation bar.</p>
+      </div>
+
+      <div class="extra-section">
+        <h3>What you'll find here:</h3>
+        <ul>
+          <li>✨ A selection of personal and academic projects</li>
+          <li>📄 A professional resume highlighting experience</li>
+          <li>🎯 Insights into interests and goals</li>
+        </ul>
+        <p>Feel free to connect or drop a message. Thanks for visiting!</p>
+      </div>
     </div>
-  </main>
+  </div>
 </body>
 
 </html>
