@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mahmood's Personal Page</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-U1W4nU1Et1jZC5Zjv5hOqZHg0hHwhYpZyktcgQFt7YViJ7Z7X2+I2nUJmRkv9H97lPzMEJPf+Phd6T92+KqP1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
       margin: 0;
@@ -42,16 +42,19 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-      align-items: center;
+      align-items: flex-start;
       padding: 4rem 2rem;
       gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
-    .welcome-box, .intro-box {
+    .welcome-box, .intro-box, .extra-section {
       background-color: rgba(255, 255, 255, 0.1);
-      padding: 2rem;
+      padding: 3rem;
       border-radius: 20px;
-      max-width: 350px;
+      width: 360px;
+      box-sizing: border-box;
     }
 
     .welcome-text {
@@ -65,7 +68,7 @@
       display: flex;
       justify-content: center;
       gap: 1.5rem;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
 
     .icon-row a {
@@ -82,28 +85,28 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      gap: 2rem;
     }
 
     .profile-img {
-      width: 200px;
-      height: 200px;
+      width: 220px;
+      height: 220px;
       object-fit: cover;
       border-radius: 50%;
       box-shadow: 0 0 15px rgba(0,0,0,0.5);
-      margin-bottom: 1.5rem;
     }
 
     .intro-box {
       text-align: center;
-      line-height: 1.5;
+      line-height: 1.6;
     }
 
-    .extra-section {
-      max-width: 600px;
-      background-color: rgba(255, 255, 255, 0.08);
-      padding: 1.5rem;
-      border-radius: 20px;
-      margin-top: 2rem;
+    .extra-section ul {
+      padding-left: 1.2rem;
+    }
+
+    .extra-section h3 {
+      margin-top: 0;
     }
   </style>
 </head>
